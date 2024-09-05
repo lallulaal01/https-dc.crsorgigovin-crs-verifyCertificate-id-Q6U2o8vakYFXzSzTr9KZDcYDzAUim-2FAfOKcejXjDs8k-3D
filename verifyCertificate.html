@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Civil Registration System</title>
+    <base href="/crs">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <!-- Clearing cache -->
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+    <meta http-equiv="pragma" content="no-cache">
+    <meta http-equiv="expires" content="-1">
+    <link rel="icon" type="image/png" href="favicon.png">
+
+    <!-- preload necessary resources -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link rel="preload" as="image" href="./assets/images/banner2.png" />
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&amp;display=swap" rel="stylesheet"> -->
+    <!-- <link href="./assets/CSS/fonts.css" rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'"> -->
+    <!-- <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> -->
+    <link href="./assets/material-icons/iconfont/material-icons.css" rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <!-- <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?v=3.exp&amp;key=AIzaSyBk9EXn8mjKPdDE7J8VjFvLc_4mXaiGYqc"></script> -->
+    <!-- <link rel="stylesheet" href="https://js.arcgis.com/4.26/esri/themes/light/main.css"> -->
+    <link href="./assets/CSS/main.css" rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <!-- Pdf generation -->
+    <script src="./assets/pdfjs-dist/build/pdf.min.js" defer=""></script>
+    <script src="./assets/pdfjs-dist/build/pdf.worker.min.js" defer=""></script>
+
+    <!-- <scri TYPE="TEXT/JAVASCRIPT" src="./assets/JS/jquery.min.js"></scri>
+  <script TYPE="TEXT/JAVASCRIPT" SRC="https://gisttransserver.in/js/CDAC-Typing.min.js"> </script> -->
+
+    <style type="text/css">
+        body,
+        html {
+            height: 100%;
+        }
+
+        .app-loading {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+        }
+
+        .app-loading .spinner {
+            height: 200px;
+            width: 200px;
+            animation: rotate 2s linear infinite;
+            transform-origin: center center;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+        }
+
+        .app-loading .spinner .path {
+            /* stroke-dasharray: 1, 200;
+      stroke-dashoffset: 0; */
+            animation: dash 1.5s ease-in-out infinite;
+            stroke-linecap: round;
+            stroke: #ddd;
+        }
+
+        @keyframes rotate {
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+
+        @keyframes dash {
+            0% {
+                stroke-dasharray: 1, 200;
+                stroke-dashoffset: 0;
+            }
+            50% {
+                stroke-dasharray: 89, 200;
+                stroke-dashoffset: -35px;
+            }
+            100% {
+                stroke-dasharray: 89, 200;
+                stroke-dashoffset: -124px;
+            }
+        }
+    </style>
+
+    <link rel="manifest" href="manifest.webmanifest">
+    <meta name="theme-color" content="#1976d2">
+    <!-- Google tag (gtag.js) -->
+    <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-8LWGBFD80R"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+    </script>
+    <!-- End of Google tag (gtag.js) -->
+    <link rel="stylesheet" href="styles.ba01c3a4a383adf6b318.css">
+</head>
+
+<body class="mat-typography">
+    <app-root>
+
+        <div class="app-loading">
+            <div class="logo">
+                <img src="assets/logo/crs-logo.png" loading="lazy" alt="CRS" width="150" height="150">
+            </div>
+            <svg class="spinner" viewBox="25 25 50 50">
+        <circle class="path" cx="50" cy="50" r="20" fill="none" stroke-width="2" stroke-miterlimit="10"/>
+      </svg>
+        </div>
+
+    </app-root>
+    <noscript>Please enable JavaScript to continue using this application.</noscript>
+    <script src="runtime-es2015.2cdc19cb9179d7433cf4.js" type="module"></script>
+    <script src="runtime-es5.2cdc19cb9179d7433cf4.js" nomodule defer></script>
+    <script src="polyfills-es5.83a3ebbf1837af0db648.js" nomodule defer></script>
+    <script src="polyfills-es2015.6aef01832b6d8c3795a3.js" type="module"></script>
+    <script src="scripts.505ed5c9103be7dc0e8b.js" defer></script>
+    <script src="main-es2015.154888192d9dba997169.js" type="module"></script>
+    <script src="main-es5.154888192d9dba997169.js" nomodule defer></script>
+</body>
+<script type="text/javascript" src="./assets/JS/trans.js"></script>
+<script>
+    google.load("elements", "1", {
+        packages: "transliteration"
+    });
+</script>
+
+</html>
